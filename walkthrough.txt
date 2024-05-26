@@ -1,0 +1,21 @@
+-- Normal Flag
+
+
+1. Start up your xampp server,
+2. Setup your mysql database (localhost/phpmyadmin)
+3. Remember to place this code folder in the htdocs folder in your xampp files
+4. Run the code in your browser and use the sql injection payload that you will find in the comment `checklogin.php`
+
+
+-- Hard Flag -- Advanced Web Application Exploitation
+
+1. Starts from where the normal flag ends
+2. Run a ping to access the file system of the website
+3. Upload the reverse shell script to the upload folder of the server. using `localhost/upload.html`
+4. Remember to keep the flag.txt in the upload folder as well.
+5. Run your netcat command to monitor the port `nc -l 3007`
+6. Run the php-reverse-shell.php script in the browser like so `localhost/uploads/php-reverse-shell.php`
+7. Your bash terminal will be triggered for us, where you can run `cat flag.txt` to acccess your flag.
+
+
+Remember to give permission to your uploads folder else you will get an access denied error when uploading the script to uplaods folder
