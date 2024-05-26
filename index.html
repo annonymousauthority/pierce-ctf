@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injection CTF</title>
+</head>
+<body>
+    <h1>SQL Injection CTF</h1>
+    <form action="checklogin.php" method="POST">
+        <label for="username">Username:</label>
+        <input required type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+<head>
+    <style>
+        #note {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        #note p {
+            margin: 0;
+        }
+    </style>
+</head>
+
